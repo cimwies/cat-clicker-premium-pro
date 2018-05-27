@@ -103,6 +103,7 @@ let octopus = {
 
     adminClear: function() {
 
+        model.adminShow = false;
         adminView.hide();
 
     },
@@ -111,12 +112,15 @@ let octopus = {
       //hides admin display and saves new cat data when save button is clicked.
     adminSave: function() {
 
+
         model.currentCat.catName = adminView.catNameValue.value;
         model.currentCat.catImg = adminView.catImgValue.value;
         model.currentCat.clickCounter = adminView.clickCounterValue.value;
         singleView.render();
         listView.render();
-        //adminView.hide();
+
+        model.adminShow = false;
+        adminView.hide();
 
     }
 
@@ -161,6 +165,7 @@ let singleView = {
     }
 
 };
+
 
 
 let listView = {
@@ -222,6 +227,7 @@ let listView = {
 };
 
 
+
 let adminView = {
 
     init: function() {
@@ -232,7 +238,8 @@ let adminView = {
 
 
         this.adminButton = document.getElementById('adminbutton');
-        this.cancelButton = document.querySelector('.cancel');
+        this.clearButton = document.getElementById('clearbutton');
+        this.cancelButton = document.getElementById('cancel');
         this.saveButton = document.getElementById('save');
 
 
@@ -277,7 +284,10 @@ let adminView = {
     show: function() {
     
         const adminpanel = document.querySelector('.adminpanel');
+        this.adminButton.style.display = 'none';
         adminpanel.style.display = 'block'; //shows the admin div on index.html
+        this.cancelButton.style.display = 'block';
+        this.saveButton.style.display = 'block';
     
     },
         
@@ -285,13 +295,15 @@ let adminView = {
     hide: function() {
 
         const adminpanel = document.querySelector('.adminpanel');
+        this.adminButton.style.display = 'block';
         adminpanel.style.display = 'none';
+        this.cancelButton.style.display = 'none';
+        this.saveButton.style.display = 'none';
     
     }
 
 
 };
-
 
 
 

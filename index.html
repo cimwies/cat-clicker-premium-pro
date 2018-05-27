@@ -41,7 +41,9 @@
 
     <section id="admin">  
 
-      <button id="adminbutton" class="btn" type="submit">admin button</button>  
+      <div class="half">
+        <button id="adminbutton" class="btn" type="submit">admin button</button> 
+      </div> 
 
       <div class="adminpanel">    
 
@@ -49,45 +51,65 @@
 
         <form>
 
-          <div>
+          <div class="half">
             <label for="name">Name:</label>
             <input type="text" id="catNameValue" name="cat_name" value="cat_name" >
           </div>
 
-          <div>
+          <div class="half">
             <label for="name">Image:</label>
             <input type="text" id="catImgValue" name="cat_image" value="cat_image" >
           </div>
 
-          <div>
+          <div class="half">
             <label for="name">Clicks:</label>
             <input type="text" id="clickCounterValue" name="cat_clicks" value="cat_clicks" >
           </div>
 
+        <!--
+
           <div class="button">
             <button class="btn" id="save" type="submit">Save Changed Values</button>
           </div>
+        
+         -->
 
           <div class="button">
-            <button class="btn cancel" type="submit">Clear Values</button>
+            <button class="btn" id="clear" type="submit">Reset all Values</button>
           </div>
+
 
         </form> 
 
 
       </div>
 
+          <div class="button extra">
+            <button class="btn" id="save" type="submit">Save Changed Values</button>
+          </div>
+
+          <div class="button">
+            <button class="btn" id="cancel" type="submit">Close without save and without reset</button>
+          </div>
+
+
+
     </section>  
 
 
     <footer>
 
-      <p>Image credits:
-        <a href="https://www.flickr.com/photos/poplinre/625069434/in/photostream/">poplinre, cat1</a>
-        <a href="https://www.flickr.com/photos/chewie/2290467335">chewie, cat2</a>
-        <a href="https://www.flickr.com/photos/jetske">jetke, cat3</a>
-        <a href="https://www.unsplash.com">cat4 and 5</a>
-      </p>
+      <section class="footer">
+
+        <p>Image credits:
+          <a href="https://www.flickr.com/photos/poplinre/625069434/in/photostream/">poplinre, cat1</a>
+          <a href="https://www.flickr.com/photos/chewie/2290467335">chewie, cat2</a>
+          <a href="https://www.flickr.com/photos/jetske">jetke, cat3</a>
+          <a href="https://www.unsplash.com">cat4 and 5</a>
+        </p>
+
+      <section>
+
     </footer> 
 
      

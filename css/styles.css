@@ -34,12 +34,13 @@ li {
 
 
 body {
-	background-color: #e1dac9;
+	background: #e1dac9 url(../img/pattern.jpg) repeat left top;
 	font: 36px/ 1.75 'Butterfly Kids', cursive;
 	color: #333;
 }
 
-h1 {
+h1, 
+h2 {
     font-family: 'Amatic SC', cursive;
     text-align: center;
     text-transform: uppercase;
@@ -52,6 +53,14 @@ a {
 ul,
 li {
     list-style-type: none;
+}
+
+section {
+    max-width: 50rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #aside ul {
@@ -72,6 +81,9 @@ li {
 }
 
 #main {
+    margin: 0 auto;
+    padding: 1rem 0;
+    border-top: 4px double #c7c1b2;
     text-align: center;
 }
 
@@ -81,17 +93,17 @@ li {
 }
 
 #admin {
-    width: 652px;
     margin: 0 auto;
+    padding: 1rem 0;
+    border-top: 4px double #c7c1b2;
 }
-
 
 .btn {
     color: #fff;
     background-color: #563d7c;
     border-color: #563d7c;
     display: inline-block;
-
+    cursor: pointer;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -103,9 +115,29 @@ li {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+#clear {
+    background-color: #dc3545;
+}
+
+#save {
+    background-color: #28a745;
+}
+
+#cancel {
+    background-color: #007bff;
+}
+
+
+
 .btn:hover,
 .btn:focus {
     background-color: #443062;
+}
+
+.half,
+.button {
+    margin: 0 auto;
+    width: 50%;
 }
 
 input {
@@ -116,10 +148,20 @@ input {
     border-radius: .25rem;
 }
 
-
+.extra {
+    margin-bottom: 0.50rem;
+}
 
 footer {
     font-size: 28px;
     text-align: center;
     color: #c7c1b2;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 1rem 0;
+    border-top: 4px double #c7c1b2;
+
+}
 }
