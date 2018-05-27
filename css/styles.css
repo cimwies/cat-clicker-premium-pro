@@ -42,8 +42,12 @@ body {
 h1, 
 h2 {
     font-family: 'Amatic SC', cursive;
-    text-align: center;
     text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    text-align: center;
 }
 
 a {
