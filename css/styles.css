@@ -1,0 +1,125 @@
+/* Browser Reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+	background-color: #e1dac9;
+	font: 36px/ 1.75 'Butterfly Kids', cursive;
+	color: #333;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: #c7c1b2;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+#aside ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#aside li {
+    padding: 6px;
+}
+
+#aside img {
+    width: 120px;
+    height: auto;
+    border: 4px solid #fff;
+    cursor: pointer;
+}
+
+#main {
+    text-align: center;
+}
+
+#main img {
+    border: 6px solid #fff;
+    cursor: pointer;
+}
+
+#admin {
+    width: 652px;
+    margin: 0 auto;
+}
+
+
+.btn {
+    color: #fff;
+    background-color: #563d7c;
+    border-color: #563d7c;
+    display: inline-block;
+
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #443062;
+}
+
+input {
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+
+
+footer {
+    font-size: 28px;
+    text-align: center;
+    color: #c7c1b2;
+}
